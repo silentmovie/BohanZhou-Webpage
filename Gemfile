@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem "jekyll"
 gem "csv"
+gem "faraday-retry"
 
 group :jekyll_plugins do
     gem "jekyll-feed"
@@ -9,4 +10,5 @@ group :jekyll_plugins do
     gem "jekyll-mentions"
     gem "jekyll-seo-tag"
     gem "jekyll-sitemap"
+    
 end
