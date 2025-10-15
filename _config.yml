@@ -4,8 +4,8 @@ email: bhzhou@ucsb.edu
 description: > # this means to ignore newlines until "baseurl:"
    Professor at Carnegie Mellon University and Researcher at Apple. I create interactive data visualization and analysis tools. PhD from University of Washington.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://silentmovie.github.io/BohanZhou-Webpage/" # the base hostname & protocol for your site
-production_url: "https://silentmovie.github.io/BohanZhou-Webpage/"
+url: "https://silentmovie.github.io" # the base hostname & protocol for your site
+production_url: "https://silentmovie.github.io"
 github_username: silentmovie
 permalink: /blog/:year/:month/:title.html
 
