@@ -1,0 +1,30 @@
+---
+layout: publication
+year: 2022
+title: "Efficient and Exact Multimarginal Optimal Transport with Pairwise Costs"
+authors:
+  - Bohan Zhou
+  - Matt Parno
+doi: 10.1007/s10915-024-02572-8
+arxiv: "2208.03025"
+status:
+  - Published
+type: 
+  - Research
+journal: Journal of Scientific Computing
+journal_url: https://doi.org/10.1007/s10915-024-02572-8
+journal_year: 2024
+journal_vol: 100
+journal_issue: no. 25
+journal_pages: 
+tags:
+  - Optimal Transport
+  - Scientific Computing
+  - Wasserstein Barycenter
+  - Optimization
+  - Network Theory
+pdf: https://doi.org/10.1007/s10915-024-02572-8
+highlight: true
+---
+
+We address the numerical solution to multimarginal optimal transport (MMOT) with pairwise costs. Inspired by the back-and-forth method introduced by Jacobs and Léger, we investigate MMOT problems with pairwise costs. We show that such problems have a graphical representation and leverage this structure to develop a new computationally gradient ascent algorithm to solve the dual formulation of such MMOT problems. Our method produces accurate solutions which can be used for the regularization-free applications, including the computation of Wasserstein barycenters with high resolution imagery.

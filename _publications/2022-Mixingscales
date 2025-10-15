@@ -1,0 +1,27 @@
+---
+layout: publication
+year: 2022
+title: "A note on equivalences between various mixing scales"
+authors:
+  - Bohan Zhou
+doi: 
+arxiv: "2210.10932"
+status:
+  - Pre-print
+type: 
+  - Expository
+journal: 
+journal_url: 
+journal_year: 
+journal_vol: 
+journal_issue: 
+journal_pages: 
+tags:
+  - mixing
+  - Scientific Computing
+  - Fluid Dynamics
+pdf: 
+highlight:
+---
+
+In this note, we provide with a simple example to show a defect in the definition of the geometric mixing scale, and then introduce an improved scale, called as the strong geometric mixing scale. The main theorem in this note is the equivalence between geometric mixing scale, strong geometric mixing scale and functional mixing scale, in the sense of weak convergences.

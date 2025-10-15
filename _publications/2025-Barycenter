@@ -1,0 +1,31 @@
+---
+layout: publication
+year: 2025
+title: "Sobolev Gradient Ascent for Optimal Transport: Barycenter Optimization and Convergence Analysis"
+authors:
+  - Kaheon Kim
+  - Bohan Zhou
+  - Changbo Zhu
+  - Xiaohui Chen
+doi: 
+arxiv: "2505.13660"
+status:
+  - Submitted
+type: 
+  - Research
+journal: 
+journal_url: 
+journal_year: 
+journal_vol: 
+journal_issue: 
+journal_pages: 
+tags:
+  - Optimal Transport
+  - Scientific Computing
+  - Optimization
+  - Wasserstein Barycenter
+pdf: 
+highlight: true
+---
+
+This paper introduces a new constraint-free concave dual formulation for the Wasserstein barycenter.  A central feature of our SGA algorithm is that the computationally expensive -concavity projection operator enforced on the Kantorovich dual potentials is unnecessary to guarantee convergence, leading to significant algorithmic and theoretical simplifications over existing primal and dual methods for computing the exact barycenter. 

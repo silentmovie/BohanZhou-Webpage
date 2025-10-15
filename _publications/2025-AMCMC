@@ -1,0 +1,36 @@
+---
+layout: publication
+year: 2025
+title: "Accelerated Markov Chain Monte Carlo Algorithms on Discrete States"
+authors:
+  - Bohan Zhou
+  - Shu Liu
+  - Xinzhe Zuo
+  - Wuchen Li
+doi: 
+arxiv: "2505.12599"
+status:
+  - Submitted
+type: 
+  - Research
+journal: Journal of Scientific Computing
+journal_url: https://doi.org/10.1007/s10915-024-02572-8
+journal_year: 2024
+journal_vol: 100
+journal_issue: no. 25
+journal_pages: 
+tags:
+  - Sampling
+  - Optimal Transport
+  - Scientific Computing
+  - Statisical Inference
+  - Optimization
+pdf: 
+highlight: true
+---
+
+We propose a class of discrete state sampling algorithms based on Nesterov’s accelerated
+gradient method, which extends the classical Metropolis-Hastings (MH) algorithm. A momentum-based acceleration framework using damped Hamiltonian flows and the corresponding jump process are proposed.
+In particular, the accelerated gradient flow of the relative Fisher information demonstrates the advantages of the algorithm in estimating
+discrete score functions without requiring the normalizing constant and keeping positive
+probabilities.

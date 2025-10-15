@@ -1,0 +1,27 @@
+---
+layout: publication
+year: 2020
+title: "The existence of minimizers for an isoperimetric problem with Wasserstein penalty term in unbounded domain"
+authors:
+  - Qinglan Xia
+  - Bohan Zhou
+doi: 10.1007/s10915-024-02572-8
+arxiv: "2002.07129"
+status:
+  - Published
+type: 
+  - Research
+journal: Advances in Calculus of Variations.
+journal_url: https://www.degruyterbrill.com/document/doi/10.1515/acv-2020-0083/html
+journal_year: 2023
+journal_vol: 16
+journal_issue: no. 1
+journal_pages: 1-15
+tags:
+  - Optimal Transport
+  - Calculus of Variations
+pdf: https://www.degruyterbrill.com/document/doi/10.1515/acv-2020-0083
+highlight: 
+---
+
+Buttazzo, Carlier and Laborde proposed a variational model for some biological models of bilayer membranes. The model consists of an isoperimetric problem with a nonlocal term involving the Wasserstein distance. In this article, we adpot a new approach that is valid in any dimensions, and provide a partial existence and regularity results.

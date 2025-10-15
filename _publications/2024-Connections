@@ -1,0 +1,30 @@
+---
+layout: publication
+year: 2024
+title: "Connections between Bressan's Mixing Conjecture, the Branched Optimal Transport and Combinatorial Optimization"
+authors:
+  - Bohan Zhou
+doi: 
+arxiv: "2403.02433"
+status:
+  - Pre-print
+type: 
+  - Research
+journal: 
+journal_url: 
+journal_year: 
+journal_vol: 
+journal_issue: 
+journal_pages: 
+tags:
+  - Mixing
+  - Fluid Dynamics
+  - Optimal Transport
+  - Branched Optimal Transport
+  - Combinatorial Optimization
+
+pdf: 
+highlight:
+---
+
+We investigate the 1D version of the notable Bressan's mixing conjecture, and introduce various formulation in the classical optimal transport setting, the branched optimal transport setting and a combinatorial optimization.

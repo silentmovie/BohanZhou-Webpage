@@ -5,7 +5,7 @@ title: "From Optimal Transport to Optimal Mixing Flows and Vice Versa"
 authors:
   - Bohan Zhou
 doi: "2020.28000610"
-arxiv: "2505.10504"
+arxiv: 
 status:
   - Published
 type: 
@@ -19,7 +19,7 @@ tags:
   - Calculus of Variations
   - Fluid Dynmamics
   - Mixing
-  - Combinatorics.
+  - Combinatorial Optimization
 pdf: https://www.proquest.com/docview/2443494398?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses
-highlight: true
+highlight: 
 ---
