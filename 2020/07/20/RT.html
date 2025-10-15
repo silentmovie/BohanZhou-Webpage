@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="application-name" content="Bohan Zhou">
+  <meta name="theme-color" content="#FFAE42">
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="250x250" />
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Mixing problem | Bohan Zhou</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Mixing problem" />
+<meta name="author" content="Bohan - [Research Posts]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mixing under Rayleigh-Taylor instability" />
+<meta property="og:description" content="Mixing under Rayleigh-Taylor instability" />
+<link rel="canonical" href="https://silentmovie.github.io/2020/07/20/RT.html" />
+<meta property="og:url" content="https://silentmovie.github.io/2020/07/20/RT.html" />
+<meta property="og:site_name" content="Bohan Zhou" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-07-20T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Mixing problem" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bohan - [Research Posts]"},"dateModified":"2020-07-20T00:00:00-07:00","datePublished":"2020-07-20T00:00:00-07:00","description":"Mixing under Rayleigh-Taylor instability","headline":"Mixing problem","mainEntityOfPage":{"@type":"WebPage","@id":"https://silentmovie.github.io/2020/07/20/RT.html"},"url":"https://silentmovie.github.io/2020/07/20/RT.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" title="Bohan Zhou" href="https://silentmovie.github.io/feed.xml">
+
+  <link href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+<header class="page-header">
+  <nav class="container">
+    <a class="site-title" href="/">Bohan Zhou</a>
+
+    <!-- <a href="/projects/" >Projects</a> -->
+    <!-- <a href="/publications/" >Publications</a> -->
+     <a href="/research/">Research</a>
+    <a href="/teaching/">Teaching</a>
+    <a href="/activities/">Activities</a>
+    <a href="/posts/">Posts</a>
+    <!-- <a href="/cv/" >CV</a> -->
+
+    <span class="external">
+      <!-- <a href="https://bsky.app/profile/domoritz.de"><i class="fa-brands fa-bluesky" aria-hidden="true"></i> Bsky</a> -->
+      <a href="mailto:bhzhou@ucsb.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
+    </span>
+  </nav>
+</header>
+
+
+    <main class="page-content">
+      <article class="container post">
+  <header class="post-header">
+    <h1 class="post-title">Mixing problem</h1>
+    
+    <p class="post-meta">
+      Published on Jul 20, 2020
+       • Bohan - [Research Posts]
+      
+      </p>
+  </header>
+
+  <div class="post-content">
+    <h5><span style="color:grey">Mixing under Rayleigh-Taylor instability</span></h5>
+<!--end_excerpt-->
+
+<div class="row">
+<img class="img-fluid" src="//assets/images/posts/zmodel.mov" alt="Zmodel">
+</div>
+
+<p>This project is a follow-up to the paper [<a href="https://epubs.siam.org/doi/pdf/10.1137/16M1083463?casa_token=0dRxZ_jt06AAAAAA:T2Bgm0RnBw64UHFZygEuj4gScaPw01fnfWQU0APePKiajut4Bui_B03K4PeqUFfZ85MaITV9ow">1</a>]. In that paper, authors derived an asymptotic model for the motion of multiphase incompressible Euler flows in 2D, subjected to Rayleigh-Taylor(RT) instability, allowing turn-over.</p>
+
+<p>Matlab codes in [<a href="https://github.com/silentmovie/RTmodel">2</a>] simulates the mixing phenomenon caused by RT even for immiscible fluids without diffusion. To see how to measure mixedness without diffusion, see [<a href="https://simda-muri.github.io/mmot/">3</a>].</p>
+
+<p>In the movie, the top box simulates the “rocket rig” experiment (mixing of NaI solution and pentane using rocket motors), in an ensemble averaging procedure; the second box shows the occupied density in the zoom-in window averaged in all experiments; the third box shows the evolution of the mixedness in terms of $\dot{H}^{-1}$ norm; the fourth box shows the effect of artificial viscosity.</p>
+
+<p>Please refer to [<a href="https://arxiv.org/abs/2201.04538">4</a>] for the recent development.</p>
+
+<hr>
+<h5 id="references">References:</h5>
+
+<ol>
+  <li><a href="https://epubs.siam.org/doi/pdf/10.1137/16M1083463?casa_token=0dRxZ_jt06AAAAAA:T2Bgm0RnBw64UHFZygEuj4gScaPw01fnfWQU0APePKiajut4Bui_B03K4PeqUFfZ85MaITV9ow">Granero-Belinchon and Shkoller, A model for Rayleigh-Taylor mixing and interface turn-over, 2017.</a></li>
+  <li><a href="https://github.com/silentmovie/RTmodel">Zhou, RTmodel, 2020.</a></li>
+  <li><a href="https://iopscience.iop.org/article/10.1088/0951-7715/25/2/R1/pdf?casa_token=kxRedMFYm1QAAAAA:jtsmOCS0mceHwfRLlOsfEvV5YVVmZj-HNqMCKgyXhoac7HOUkUaKnyfEQlOruM9SJ1dL54_R1Q">Thiffeault, Using multiscale norms to quantify mixing and transport, 2011.</a></li>
+  <li><a href="https://arxiv.org/abs/2201.04538">Pandya and Shkoller, 3D interface models for Rayleigh-Taylor Problems, 2022.</a></li>
+</ol>
+
+
+  </div>
+
+  <div class="blog-links">
+  
+    <span class="spacer"></span>
+  
+  
+    <div>
+      <a href="/2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html" title="Next Post: ">Regularized optimal transport</a>
+      <i class="fas fa-md fa-chevron-right"></i>
+    </div>
+  
+  </div>
+</article>
+
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="footer-col">
+      Under Construction.<br>
+      <abbr title="Last build on 2025-10-15">October 2025</abbr>
+    </div>
+    <div class="footer-col">
+      <a href="https://github.com/silentmovie/silentmovie.github.io/edit/main/_posts/research/2020-07-20-Mixing%20Problem.md">Edit this page</a>
+    </div>
+    <!-- <div class="footer-col site-desc">Ph.D in Applied Math. Research interests include optimal transport, scientific machine learning, foundations of data science, variational inference, information geometry, calculus of variations, partial diﬀerential equations.
+ I'm <a href="https://twitter.com/domoritz">@domoritz</a> on Twitter, <a rel="me" href="https://vis.social/@dom">@dom@vis.social</a> on the Fediverse, and <a href="https://bsky.app/profile/domoritz.de">@domoritz.de</a> on Bluesky.</div> -->
+  </div>
+</footer>
+
+    <script>
+  function trim(str) {
+    return str.replace(/^\s+|\s+$/g, '');
+  }
+  var headers = document.querySelectorAll("h2, h3, h4, h5, h6");
+  for (var i=0; i<headers.length; i++) {
+    var h = headers[i];
+    var name = h.getAttribute("id");
+    var title = h.innerHTML;
+    h.innerHTML = '<a href="#' + name + '" class="anchor"><i class="fas fa-hashtag"></i></a>' + trim(title);
+  }
+</script>
+
+  </body>
+</html>

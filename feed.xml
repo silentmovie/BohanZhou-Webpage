@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://silentmovie.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silentmovie.github.io/" rel="alternate" type="text/html" /><updated>2025-10-15T10:32:08-07:00</updated><id>https://silentmovie.github.io/feed.xml</id><title type="html">Bohan Zhou</title><subtitle>Ph.D in Applied Math. Research interests include optimal transport, scientific machine learning, foundations of data science, variational inference, information geometry, calculus of variations, partial diﬀerential equations.
+</subtitle><entry><title type="html">Multimarginal optimal transport</title><link href="https://silentmovie.github.io/2022/10/17/Robertson-Channel.html" rel="alternate" type="text/html" title="Multimarginal optimal transport" /><published>2022-10-17T00:00:00-07:00</published><updated>2022-10-17T00:00:00-07:00</updated><id>https://silentmovie.github.io/2022/10/17/MultiMarginal%20Optimal%20Transport</id><content type="html" xml:base="https://silentmovie.github.io/2022/10/17/Robertson-Channel.html"><![CDATA[<h5><span style="color:grey">Multi-marginal Optimal Transport for Sea Ice Dynamics Prediction</span></h5>
+<!--end_excerpt-->
+
+<p><img class="img-fluid" src="//assets/images/posts/Bohan_icefloe.gif" alt="Robertson Channel" /></p>
+
+<p>B. Zhou and M. Parno [<a href="https://arxiv.org/abs/2208.03025">1</a>] utilize a general multi-marginal optimal transport (MMOT) framework to obtain the continuous representation of discrete-in-time data. One possible application is the prediction on the sea ice dynamics. Given observations (called as marginals in the general framework) at different time-stamps, our method provides a prediction on the sea ice dynamics in a continuous time. This provides a solution to some stage in the <a href="https://simda-muri.github.io/challenges/source/descriptions/problem2.html">Lagrangian Observation Mapping</a>. The python package with its description can be found [<a href="https://simda-muri.github.io/mmot/">2</a>].</p>
+
+<p>Using the SAR data (every 6 days) obtained from <a href="https://asf.alaska.edu">Alaska Satellite Facility</a> on the Robertson Channel (thanks to our group member J. Park at Dartmouth), the video shows the prediction dynamics every 2 day. Even finer predictions are possible within a few minutes on a personal computer.</p>
+
+<hr />
+<h5 id="references">References:</h5>
+
+<ol>
+  <li><a href="https://arxiv.org/abs/2208.03025">Zhou and Parno, Efficient and Exact Multimarginal Optimal Transport with Pairwise Costs, 2022.</a></li>
+  <li><a href="https://simda-muri.github.io/mmot/">Parno and Zhou, MMOT2D python package, 2022.</a></li>
+</ol>]]></content><author><name>Bohan - [Research Posts]</name></author><category term="blog" /><summary type="html"><![CDATA[Multi-marginal Optimal Transport for Sea Ice Dynamics Prediction]]></summary></entry><entry><title type="html">Wasserstein barycenter</title><link href="https://silentmovie.github.io/2022/08/05/Shape-Interpolation.html" rel="alternate" type="text/html" title="Wasserstein barycenter" /><published>2022-08-05T00:00:00-07:00</published><updated>2022-08-05T00:00:00-07:00</updated><id>https://silentmovie.github.io/2022/08/05/Wasserstein%20Barycenter</id><content type="html" xml:base="https://silentmovie.github.io/2022/08/05/Shape-Interpolation.html"><![CDATA[<h5><span style="color:grey">Multi-marginal optimal transport for the Wasserstein barycenter</span></h5>
+<!--end_excerpt-->
+
+<div><img class="img-fluid" src="//assets/images/posts/barycenter-comp.png" alt="Wasserstein Barycenter" /></div>
+
+<p>A barycenter-type of problems is: given a set of objects $(\mu_i)_{i=1}^m$,  we are looking for something in the same space (or formally speaking: within the same category), which is close to those objects with respect to some distance.</p>
+
+<p>\begin{equation}
+\label{eq:bary}
+\mu= \textrm{argmin}\sum_{i=1}^m \lambda_i \textrm{dis}(\mu_i,\mu).
+\end{equation}</p>
+
+<p>Depending on the metric, the barycenter contains “averaged” information from objects.</p>
+
+<p>In our problem, we are particularly interested in the space of probability measures equipped with the Wasserstein distance, which was introduced by Agueh and Carlier [<a href="http://doi.org/10.1137/100805741">1</a>].</p>
+
+<p>\begin{equation}
+\label{eq:Wass_bary}
+\mu= \textrm{argmin}\sum_{i=1}^m \frac{\lambda_i}{2} W_2^2(\mu_i,\mu).
+\end{equation}</p>
+
+<p>They showed it is equivalent to the MMOT under the cost 
+\begin{equation}
+c(x_1,\cdots,x_m)=\sum_{i&lt;j}\frac{\lambda_i \lambda_j}{2} |x_i-x_j|^2.
+\end{equation}</p>
+
+<p>And the Wasserstein barycenter is introduced by
+\begin{equation}
+\label{eq:pushforward}
+\mu= (\textrm{id} - \frac{\nabla f_i}{\lambda_i})_{\sharp} \mu_i.
+\end{equation}</p>
+
+<p>Our method [<a href="https://arxiv.org/abs/2208.03025">2</a>] provides an exact and efficient way to compute dual variables $(f_i)$ in an indirect way because the cost $c(x_1,\cdots,x_m)=\sum_{i&lt;j}\frac{\lambda_i \lambda_j}{2} |x_i-x_j|^2$ corresponds to a complete graph: we find the dual variables $(\hat{f_i})$ to an equivalent MMOT in a tree and use those dual variables to recover the original dual variables $(f_i)$</p>
+
+<hr />
+<h5 id="references">References:</h5>
+
+<ol>
+  <li><a href="http://doi.org/10.1137/100805741">Agueh and Carlier, Barycenter in the Wasserstein space, 2011.</a></li>
+  <li><a href="https://arxiv.org/abs/2208.03025">Zhou and Parno, Efficient and Exact Multimarginal Optimal Transport with Pairwise Costs, 2022.</a></li>
+</ol>]]></content><author><name>Bohan - [Research Posts]</name></author><category term="blog" /><summary type="html"><![CDATA[Multi-marginal optimal transport for the Wasserstein barycenter]]></summary></entry><entry><title type="html">Wasserstein interpolation</title><link href="https://silentmovie.github.io/2022/05/30/Understand-interpolation.html" rel="alternate" type="text/html" title="Wasserstein interpolation" /><published>2022-05-30T00:00:00-07:00</published><updated>2022-05-30T00:00:00-07:00</updated><id>https://silentmovie.github.io/2022/05/30/Wasserstein%20Interpolation</id><content type="html" xml:base="https://silentmovie.github.io/2022/05/30/Understand-interpolation.html"><![CDATA[<h5><span style="color:#00703C">Wasserstein Interpolation Examples in Point Clouds</span></h5>
+<!--end_excerpt-->
+<div class="row">
+	<div class="column">
+	<img class="img-fluid" src="//assets/images/posts/Wass-dough.gif" alt="Wasserstein dough" />
+	</div>
+		<div class="column">
+	<img class="img-fluid" src="//assets/images/posts/Wass-rotation.gif" alt="Wasserstein rotation" />
+	</div>
+</div>
+
+<p>Tyler, an undergraduate student at Dartmouth College, wants to fully understand the Wasserstein interpolation. Though the Wasserstein interpolation is not a new stuff: between two given measures $\mu_1$ and $\mu_2$, one may define the Wasserstein interpolation through either a given optimal transport map $T$:</p>
+
+<p>\begin{equation}
+\label{eq:Wass_int_map}
+\mu_t = ((1-t)x+tT(x))_{\sharp}\mu_1;
+\end{equation}</p>
+
+<p>or a given optimal transport plan $P$:</p>
+
+<p>\begin{equation}
+\label{eq:Wass_int_plan}
+\mu_t = ((1-t)x+ty)_{\sharp} P.
+\end{equation}</p>
+
+<p>However, as shown in the above animation figures, the Wasserstein interpolation is not that stable: Given two sets of two point clouds (blue point cloud at time 0 and red point cloud at time 1). On the left plot, they are in 90 degree intersected at their ends; on the right plot, they are in 84.55 degree intersected at their ends. However their interpolation behaviors via the Wasserstein interpolation look quite different. The left one is analogous with deformations of doughs in the bakery, the right one is almost regular rotation of a baguette.</p>
+
+<p>In this particular example, we can explain it via optimal transport theory while there is still a long way towards a full understanding on the Wasserstein interpolation, so that predictions based on the Wasserstein interpolation are controlable.</p>
+
+<p>Our current code owes a debt of gratitute to Prof. Peyre’s open-resource online experiments [<a href="https://www.numerical-tours.com/python/">1</a>], in particular, the linear programming to OT. In the future, we plan to use more recent faster solver [<a href="https://back-and-forth.netlify.app">2</a>], or more general MMOT solver [<a href="https://simda-muri.github.io/mmot/">3</a>].</p>
+
+<hr />
+<h5 id="references">References:</h5>
+
+<ol>
+  <li><a href="https://www.numerical-tours.com/python/">Peyre, Numerical Tours.</a></li>
+  <li><a href="https://back-and-forth.netlify.app">Jacobs and Leger, The Back-and-Forth Method, 2020.</a></li>
+  <li><a href="https://simda-muri.github.io/mmot/">Parno and Zhou, MMOT2D python package, 2022.</a></li>
+</ol>]]></content><author><name>Bohan and Tyler - [Undergraduate Research Posts]</name></author><category term="blog" /><summary type="html"><![CDATA[Wasserstein Interpolation Examples in Point Clouds]]></summary></entry><entry><title type="html">Regularized optimal transport</title><link href="https://silentmovie.github.io/2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html" rel="alternate" type="text/html" title="Regularized optimal transport" /><published>2020-08-31T00:00:00-07:00</published><updated>2020-08-31T00:00:00-07:00</updated><id>https://silentmovie.github.io/2020/08/31/Regularized%20Optimal%20Transport</id><content type="html" xml:base="https://silentmovie.github.io/2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html"><![CDATA[<h5><span style="color:#F58025">Measuring Ice Motion with Optimal Transport</span></h5>
+
+<p><img class="img-fluid" src="//assets/images/posts/parno-GRL2019.png" alt="OT" /></p>
+
+<p>In [<a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019GL083037">1</a>], authors introduced a new way of estimating ice motion from satellite imagery using concepts from optimal transport.  The idea is to treat images as probability distributions and to leverage efficient regularized optimal transport algorithms to find a distance-minimizing transformation between images on two subsequent days.  From the transformation we can extract distances, velocities, and strains. However, this framework is limited to 2 marginals and the computational method introduces blurring due to the regularization parameter. This is the starting point of the recent project on the exact method to multimariginal optimal transport (MMOT) framework.</p>
+
+<hr />
+<h5 id="references">References:</h5>
+
+<ol>
+  <li><a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019GL083037">Parno et al., Remote measurement of sea ice dynamics with regularized optimal transport, 2019</a></li>
+</ol>]]></content><author><name>Bohan - [Learning Posts]</name></author><category term="blog" /><summary type="html"><![CDATA[Measuring Ice Motion with Optimal Transport]]></summary></entry><entry><title type="html">Mixing problem</title><link href="https://silentmovie.github.io/2020/07/20/RT.html" rel="alternate" type="text/html" title="Mixing problem" /><published>2020-07-20T00:00:00-07:00</published><updated>2020-07-20T00:00:00-07:00</updated><id>https://silentmovie.github.io/2020/07/20/Mixing%20Problem</id><content type="html" xml:base="https://silentmovie.github.io/2020/07/20/RT.html"><![CDATA[<h5><span style="color:grey">Mixing under Rayleigh-Taylor instability</span></h5>
+<!--end_excerpt-->
+
+<div class="row">
+<img class="img-fluid" src="//assets/images/posts/zmodel.mov" alt="Zmodel" />
+</div>
+
+<p>This project is a follow-up to the paper [<a href="https://epubs.siam.org/doi/pdf/10.1137/16M1083463?casa_token=0dRxZ_jt06AAAAAA:T2Bgm0RnBw64UHFZygEuj4gScaPw01fnfWQU0APePKiajut4Bui_B03K4PeqUFfZ85MaITV9ow">1</a>]. In that paper, authors derived an asymptotic model for the motion of multiphase incompressible Euler flows in 2D, subjected to Rayleigh-Taylor(RT) instability, allowing turn-over.</p>
+
+<p>Matlab codes in [<a href="https://github.com/silentmovie/RTmodel">2</a>] simulates the mixing phenomenon caused by RT even for immiscible fluids without diffusion. To see how to measure mixedness without diffusion, see [<a href="https://simda-muri.github.io/mmot/">3</a>].</p>
+
+<p>In the movie, the top box simulates the “rocket rig” experiment (mixing of NaI solution and pentane using rocket motors), in an ensemble averaging procedure; the second box shows the occupied density in the zoom-in window averaged in all experiments; the third box shows the evolution of the mixedness in terms of $\dot{H}^{-1}$ norm; the fourth box shows the effect of artificial viscosity.</p>
+
+<p>Please refer to [<a href="https://arxiv.org/abs/2201.04538">4</a>] for the recent development.</p>
+
+<hr />
+<h5 id="references">References:</h5>
+
+<ol>
+  <li><a href="https://epubs.siam.org/doi/pdf/10.1137/16M1083463?casa_token=0dRxZ_jt06AAAAAA:T2Bgm0RnBw64UHFZygEuj4gScaPw01fnfWQU0APePKiajut4Bui_B03K4PeqUFfZ85MaITV9ow">Granero-Belinchon and Shkoller, A model for Rayleigh-Taylor mixing and interface turn-over, 2017.</a></li>
+  <li><a href="https://github.com/silentmovie/RTmodel">Zhou, RTmodel, 2020.</a></li>
+  <li><a href="https://iopscience.iop.org/article/10.1088/0951-7715/25/2/R1/pdf?casa_token=kxRedMFYm1QAAAAA:jtsmOCS0mceHwfRLlOsfEvV5YVVmZj-HNqMCKgyXhoac7HOUkUaKnyfEQlOruM9SJ1dL54_R1Q">Thiffeault, Using multiscale norms to quantify mixing and transport, 2011.</a></li>
+  <li><a href="https://arxiv.org/abs/2201.04538">Pandya and Shkoller, 3D interface models for Rayleigh-Taylor Problems, 2022.</a></li>
+</ol>]]></content><author><name>Bohan - [Research Posts]</name></author><category term="blog" /><summary type="html"><![CDATA[Mixing under Rayleigh-Taylor instability]]></summary></entry></feed>

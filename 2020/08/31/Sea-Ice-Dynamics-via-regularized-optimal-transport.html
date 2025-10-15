@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="application-name" content="Bohan Zhou">
+  <meta name="theme-color" content="#FFAE42">
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="250x250" />
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Regularized optimal transport | Bohan Zhou</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Regularized optimal transport" />
+<meta name="author" content="Bohan - [Learning Posts]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Measuring Ice Motion with Optimal Transport" />
+<meta property="og:description" content="Measuring Ice Motion with Optimal Transport" />
+<link rel="canonical" href="https://silentmovie.github.io/2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html" />
+<meta property="og:url" content="https://silentmovie.github.io/2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html" />
+<meta property="og:site_name" content="Bohan Zhou" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-31T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Regularized optimal transport" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bohan - [Learning Posts]"},"dateModified":"2020-08-31T00:00:00-07:00","datePublished":"2020-08-31T00:00:00-07:00","description":"Measuring Ice Motion with Optimal Transport","headline":"Regularized optimal transport","mainEntityOfPage":{"@type":"WebPage","@id":"https://silentmovie.github.io/2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html"},"url":"https://silentmovie.github.io/2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" title="Bohan Zhou" href="https://silentmovie.github.io/feed.xml">
+
+  <link href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+<header class="page-header">
+  <nav class="container">
+    <a class="site-title" href="/">Bohan Zhou</a>
+
+    <!-- <a href="/projects/" >Projects</a> -->
+    <!-- <a href="/publications/" >Publications</a> -->
+     <a href="/research/">Research</a>
+    <a href="/teaching/">Teaching</a>
+    <a href="/activities/">Activities</a>
+    <a href="/posts/">Posts</a>
+    <!-- <a href="/cv/" >CV</a> -->
+
+    <span class="external">
+      <!-- <a href="https://bsky.app/profile/domoritz.de"><i class="fa-brands fa-bluesky" aria-hidden="true"></i> Bsky</a> -->
+      <a href="mailto:bhzhou@ucsb.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
+    </span>
+  </nav>
+</header>
+
+
+    <main class="page-content">
+      <article class="container post">
+  <header class="post-header">
+    <h1 class="post-title">Regularized optimal transport</h1>
+    
+    <p class="post-meta">
+      Published on Aug 31, 2020
+       • Bohan - [Learning Posts]
+      
+      </p>
+  </header>
+
+  <div class="post-content">
+    <h5><span style="color:#F58025">Measuring Ice Motion with Optimal Transport</span></h5>
+
+<p><img class="img-fluid" src="//assets/images/posts/parno-GRL2019.png" alt="OT"></p>
+
+<p>In [<a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019GL083037">1</a>], authors introduced a new way of estimating ice motion from satellite imagery using concepts from optimal transport.  The idea is to treat images as probability distributions and to leverage efficient regularized optimal transport algorithms to find a distance-minimizing transformation between images on two subsequent days.  From the transformation we can extract distances, velocities, and strains. However, this framework is limited to 2 marginals and the computational method introduces blurring due to the regularization parameter. This is the starting point of the recent project on the exact method to multimariginal optimal transport (MMOT) framework.</p>
+
+<hr>
+<h5 id="references">References:</h5>
+
+<ol>
+  <li><a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019GL083037">Parno et al., Remote measurement of sea ice dynamics with regularized optimal transport, 2019</a></li>
+</ol>
+
+
+  </div>
+
+  <div class="blog-links">
+  
+    <div>
+      <i class="fas fa-md fa-chevron-left"></i>
+      <a href="/2020/07/20/RT.html" title="Previous Post: Mixing problem">Mixing problem</a>
+    </div>
+  
+  
+    <div>
+      <a href="/2022/05/30/Understand-interpolation.html" title="Next Post: ">Wasserstein interpolation</a>
+      <i class="fas fa-md fa-chevron-right"></i>
+    </div>
+  
+  </div>
+</article>
+
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="footer-col">
+      Under Construction.<br>
+      <abbr title="Last build on 2025-10-15">October 2025</abbr>
+    </div>
+    <div class="footer-col">
+      <a href="https://github.com/silentmovie/silentmovie.github.io/edit/main/_posts/general/2020-08-31-Regularized%20Optimal%20Transport.md">Edit this page</a>
+    </div>
+    <!-- <div class="footer-col site-desc">Ph.D in Applied Math. Research interests include optimal transport, scientific machine learning, foundations of data science, variational inference, information geometry, calculus of variations, partial diﬀerential equations.
+ I'm <a href="https://twitter.com/domoritz">@domoritz</a> on Twitter, <a rel="me" href="https://vis.social/@dom">@dom@vis.social</a> on the Fediverse, and <a href="https://bsky.app/profile/domoritz.de">@domoritz.de</a> on Bluesky.</div> -->
+  </div>
+</footer>
+
+    <script>
+  function trim(str) {
+    return str.replace(/^\s+|\s+$/g, '');
+  }
+  var headers = document.querySelectorAll("h2, h3, h4, h5, h6");
+  for (var i=0; i<headers.length; i++) {
+    var h = headers[i];
+    var name = h.getAttribute("id");
+    var title = h.innerHTML;
+    h.innerHTML = '<a href="#' + name + '" class="anchor"><i class="fas fa-hashtag"></i></a>' + trim(title);
+  }
+</script>
+
+  </body>
+</html>

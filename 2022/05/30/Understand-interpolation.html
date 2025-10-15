@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="application-name" content="Bohan Zhou">
+  <meta name="theme-color" content="#FFAE42">
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="250x250" />
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Wasserstein interpolation | Bohan Zhou</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Wasserstein interpolation" />
+<meta name="author" content="Bohan and Tyler - [Undergraduate Research Posts]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Wasserstein Interpolation Examples in Point Clouds" />
+<meta property="og:description" content="Wasserstein Interpolation Examples in Point Clouds" />
+<link rel="canonical" href="https://silentmovie.github.io/2022/05/30/Understand-interpolation.html" />
+<meta property="og:url" content="https://silentmovie.github.io/2022/05/30/Understand-interpolation.html" />
+<meta property="og:site_name" content="Bohan Zhou" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-30T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Wasserstein interpolation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Bohan and Tyler - [Undergraduate Research Posts]"},"dateModified":"2022-05-30T00:00:00-07:00","datePublished":"2022-05-30T00:00:00-07:00","description":"Wasserstein Interpolation Examples in Point Clouds","headline":"Wasserstein interpolation","mainEntityOfPage":{"@type":"WebPage","@id":"https://silentmovie.github.io/2022/05/30/Understand-interpolation.html"},"url":"https://silentmovie.github.io/2022/05/30/Understand-interpolation.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" title="Bohan Zhou" href="https://silentmovie.github.io/feed.xml">
+
+  <link href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+<header class="page-header">
+  <nav class="container">
+    <a class="site-title" href="/">Bohan Zhou</a>
+
+    <!-- <a href="/projects/" >Projects</a> -->
+    <!-- <a href="/publications/" >Publications</a> -->
+     <a href="/research/">Research</a>
+    <a href="/teaching/">Teaching</a>
+    <a href="/activities/">Activities</a>
+    <a href="/posts/">Posts</a>
+    <!-- <a href="/cv/" >CV</a> -->
+
+    <span class="external">
+      <!-- <a href="https://bsky.app/profile/domoritz.de"><i class="fa-brands fa-bluesky" aria-hidden="true"></i> Bsky</a> -->
+      <a href="mailto:bhzhou@ucsb.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
+    </span>
+  </nav>
+</header>
+
+
+    <main class="page-content">
+      <article class="container post">
+  <header class="post-header">
+    <h1 class="post-title">Wasserstein interpolation</h1>
+    
+    <p class="post-meta">
+      Published on May 30, 2022
+       • Bohan and Tyler - [Undergraduate Research Posts]
+      
+      </p>
+  </header>
+
+  <div class="post-content">
+    <h5><span style="color:#00703C">Wasserstein Interpolation Examples in Point Clouds</span></h5>
+<!--end_excerpt-->
+<div class="row">
+	<div class="column">
+	<img class="img-fluid" src="//assets/images/posts/Wass-dough.gif" alt="Wasserstein dough">
+	</div>
+		<div class="column">
+	<img class="img-fluid" src="//assets/images/posts/Wass-rotation.gif" alt="Wasserstein rotation">
+	</div>
+</div>
+
+<p>Tyler, an undergraduate student at Dartmouth College, wants to fully understand the Wasserstein interpolation. Though the Wasserstein interpolation is not a new stuff: between two given measures $\mu_1$ and $\mu_2$, one may define the Wasserstein interpolation through either a given optimal transport map $T$:</p>
+
+<p>\begin{equation}
+\label{eq:Wass_int_map}
+\mu_t = ((1-t)x+tT(x))_{\sharp}\mu_1;
+\end{equation}</p>
+
+<p>or a given optimal transport plan $P$:</p>
+
+<p>\begin{equation}
+\label{eq:Wass_int_plan}
+\mu_t = ((1-t)x+ty)_{\sharp} P.
+\end{equation}</p>
+
+<p>However, as shown in the above animation figures, the Wasserstein interpolation is not that stable: Given two sets of two point clouds (blue point cloud at time 0 and red point cloud at time 1). On the left plot, they are in 90 degree intersected at their ends; on the right plot, they are in 84.55 degree intersected at their ends. However their interpolation behaviors via the Wasserstein interpolation look quite different. The left one is analogous with deformations of doughs in the bakery, the right one is almost regular rotation of a baguette.</p>
+
+<p>In this particular example, we can explain it via optimal transport theory while there is still a long way towards a full understanding on the Wasserstein interpolation, so that predictions based on the Wasserstein interpolation are controlable.</p>
+
+<p>Our current code owes a debt of gratitute to Prof. Peyre’s open-resource online experiments [<a href="https://www.numerical-tours.com/python/">1</a>], in particular, the linear programming to OT. In the future, we plan to use more recent faster solver [<a href="https://back-and-forth.netlify.app">2</a>], or more general MMOT solver [<a href="https://simda-muri.github.io/mmot/">3</a>].</p>
+
+<hr>
+<h5 id="references">References:</h5>
+
+<ol>
+  <li><a href="https://www.numerical-tours.com/python/">Peyre, Numerical Tours.</a></li>
+  <li><a href="https://back-and-forth.netlify.app">Jacobs and Leger, The Back-and-Forth Method, 2020.</a></li>
+  <li><a href="https://simda-muri.github.io/mmot/">Parno and Zhou, MMOT2D python package, 2022.</a></li>
+</ol>
+
+
+  </div>
+
+  <div class="blog-links">
+  
+    <div>
+      <i class="fas fa-md fa-chevron-left"></i>
+      <a href="/2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html" title="Previous Post: Regularized optimal transport">Regularized optimal transport</a>
+    </div>
+  
+  
+    <div>
+      <a href="/2022/08/05/Shape-Interpolation.html" title="Next Post: ">Wasserstein barycenter</a>
+      <i class="fas fa-md fa-chevron-right"></i>
+    </div>
+  
+  </div>
+</article>
+
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="footer-col">
+      Under Construction.<br>
+      <abbr title="Last build on 2025-10-15">October 2025</abbr>
+    </div>
+    <div class="footer-col">
+      <a href="https://github.com/silentmovie/silentmovie.github.io/edit/main/_posts/research/2022-05-30-Wasserstein%20Interpolation.md">Edit this page</a>
+    </div>
+    <!-- <div class="footer-col site-desc">Ph.D in Applied Math. Research interests include optimal transport, scientific machine learning, foundations of data science, variational inference, information geometry, calculus of variations, partial diﬀerential equations.
+ I'm <a href="https://twitter.com/domoritz">@domoritz</a> on Twitter, <a rel="me" href="https://vis.social/@dom">@dom@vis.social</a> on the Fediverse, and <a href="https://bsky.app/profile/domoritz.de">@domoritz.de</a> on Bluesky.</div> -->
+  </div>
+</footer>
+
+    <script>
+  function trim(str) {
+    return str.replace(/^\s+|\s+$/g, '');
+  }
+  var headers = document.querySelectorAll("h2, h3, h4, h5, h6");
+  for (var i=0; i<headers.length; i++) {
+    var h = headers[i];
+    var name = h.getAttribute("id");
+    var title = h.innerHTML;
+    h.innerHTML = '<a href="#' + name + '" class="anchor"><i class="fas fa-hashtag"></i></a>' + trim(title);
+  }
+</script>
+
+  </body>
+</html>
