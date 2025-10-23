@@ -8,7 +8,7 @@ class: activities
 {:.hidden}
 # Talks
 
-## Talks
+# Talks and Presentations
 {% assign talktitles = site.data.talks | group_by:"title" %}
 {% for title in talktitles %}
 {:.talk-title}
@@ -19,4 +19,4 @@ class: activities
 {% endfor %}
 {% endfor %}
 
-## Services
+# Services
