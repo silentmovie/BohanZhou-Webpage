@@ -36,7 +36,7 @@ I received my Ph.D. at UC Davis advised by [Qinglan Xia](https://www.math.ucdavi
 
 </div>
 
-## Recent <a href="{{ "/publications/" | relative_url }}">Papers</a>
+## Featured <a href="{{ "/publications/" | relative_url }}">Papers</a>
 <a href="https://arxiv.org/a/0000-0002-8930-0098.html"><i class="fab fa-scroll" aria-hidden="true"></i> ArXiv</a>
 <a href="https://scholar.google.com/citations?user=Fc4gd7oAAAAJ&hl=en&oi=sra"><i class="fab fa-google" aria-hidden="true"></i> Google Scholar</a>
 
