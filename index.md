@@ -13,10 +13,10 @@ I'm a visiting assistant professor at the [UCSB](https://math.ucsb.edu) fortunat
 
 I am an applied mathematician with interests in developing provable and practical methodologies for analyzing data distributions. My research mostly originates from real-world problems, following channels created by optimal transport (OT) theory, it fluxes into scientific computation, calculus of variations, optimization, network theory, fluid dynamics and data science.
 
-I received my Ph.D. at UCDavis advised by [Qinglan Xia](https://www.math.ucdavis.edu/~qlxia/). After that, I was a Byrne Instructor in Applied Mathematics at Dartmouth College, in the group of [Anne Gelb](https://math.dartmouth.edu/~annegelb/) partially funded by the [ONR-MURI](https://math.la.asu.edu/~muri/index.html) program. {% comment %} Earlier, I received my B.S. at Zhejiang University, where I completed my undergraduate thesis under supervision of [Prof. Zhi (George) Lin](http://www.math.zju.edu.cn/linzhi/).{% endcomment %}
+I received my Ph.D. at UC Davis advised by [Qinglan Xia](https://www.math.ucdavis.edu/~qlxia/). After that, I was a Byrne Instructor in Applied Mathematics at Dartmouth College, in the group of [Anne Gelb](https://math.dartmouth.edu/~annegelb/) partially funded by the [ONR-MURI](https://math.la.asu.edu/~muri/index.html) program. {% comment %} Earlier, I received my B.S. at Zhejiang University, where I completed my undergraduate thesis under supervision of [Prof. Zhi (George) Lin](http://www.math.zju.edu.cn/linzhi/).{% endcomment %}
 
 
-Here is my complete [CV]({{site.baseurl}}/BohanZhou-CV.pdf). (*Last Update: Sep, 2025*)
+<!-- Here is my complete [CV]({{site.baseurl}}/BohanZhou-CV.pdf). (*Last Update: Sep, 2025*) -->
 
 
 </div>
