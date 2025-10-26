@@ -1,10 +1,10 @@
 ---
 layout: post
-author: Bohan - [Research Posts]
+author: Bohan 
 permalink: /2022/08/05/Shape-Interpolation.html
 image-slider: /assets/images/posts/barycenter-comp.png
 <!-- excerpt: Multi-marginal optimal transport for the Wasserstein barycenter -->
-categories: blog
+categories: Research
 excerpt_separator: <!--end_excerpt-->
 ---
 

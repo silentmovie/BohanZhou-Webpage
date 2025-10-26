@@ -1,9 +1,9 @@
 ---
 layout: post
-author: Bohan and Tyler - [Undergraduate Research Posts]
+author: Bohan and Tyler 
 permalink: /2022/05/30/Understand-interpolation.html
 image-slider: /assets/images/posts/Wass-dough.gif
-categories: blog
+categories: [Undergraduate Research Posts]
 excerpt_separator: <!--end_excerpt-->
 ---
 

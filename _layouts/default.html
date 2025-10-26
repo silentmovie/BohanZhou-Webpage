@@ -3,6 +3,10 @@
   {% include head.html %}
   <body>
     {% include header.html %}
+    {% include mathjax-config.html %}
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
 
     <main class="page-content">
       {{ content }}

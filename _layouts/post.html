@@ -9,6 +9,7 @@ layout: default
     <p class="post-meta">
       Published on {{ page.date | date: "%b %-d, %Y" }}
       {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.categories %} • {{ page.categories }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
       </p>
   </header>

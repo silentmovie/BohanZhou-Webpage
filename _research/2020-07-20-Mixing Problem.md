@@ -1,9 +1,9 @@
 ---
 layout: post
-author: Bohan - [Research Posts]
+author: Bohan
 permalink: /2020/07/20/RT.html
 image-slider: /assets/images/posts/movie6.png
-categories: blog
+categories: Research
 excerpt_separator: <!--end_excerpt-->
 ---
 
