@@ -10,7 +10,7 @@ categories: [Learning Posts]
 <h5><span style="color:#F58025">Measuring Ice Motion with Optimal Transport</span></h5>
 
 
-<img class="img-fluid" src="{{site.baseurl}}/{{page.image-slider}}" alt="OT">
+<img class="img-fluid" src="{{page.image-slider | relative_url}}" alt="OT">
 
 In \[[1]\], authors introduced a new way of estimating ice motion from satellite imagery using concepts from optimal transport.  The idea is to treat images as probability distributions and to leverage efficient regularized optimal transport algorithms to find a distance-minimizing transformation between images on two subsequent days.  From the transformation we can extract distances, velocities, and strains. However, this framework is limited to 2 marginals and the computational method introduces blurring due to the regularization parameter. This is the starting point of the recent project on the exact method to multimariginal optimal transport (MMOT) framework. 
 

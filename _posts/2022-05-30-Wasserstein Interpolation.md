@@ -12,10 +12,10 @@ excerpt_separator: <!--end_excerpt-->
 <!--end_excerpt-->
 <div class="row">
 	<div class="column">
-	<img class="img-fluid" src="{{site.baseurl}}//assets/images/posts/Wass-dough.gif" alt="Wasserstein dough">
+	<img class="img-fluid" src="{{'/assets/images/posts/Wass-dough.gif' | relative_url}}" alt="Wasserstein dough">
 	</div>
 		<div class="column">
-	<img class="img-fluid" src="{{site.baseurl}}//assets/images/posts/Wass-rotation.gif" alt="Wasserstein rotation">
+	<img class="img-fluid" src="{{'/assets/images/posts/Wass-rotation.gif' | relative_url}}" alt="Wasserstein rotation">
 	</div>
 </div>
 
