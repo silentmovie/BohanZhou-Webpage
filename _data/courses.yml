@@ -1,4 +1,4 @@
-- title: University of California, Santa Barbara
+- location: University of California, Santa Barbara
   courses:
     - title: (3A) Calculus with Applications
     - title: (6B) Vector Calculus with Applications
@@ -7,7 +7,7 @@
     - title: (108AB) Linear Algebra
     - title: (117) Methods of Analysis
 
-- title: Dartmouth College
+- location: Dartmouth College
   courses:
     - title: (8) Calculus of Functions of one and several variables
     - title: (10) Introductory Statistics
@@ -15,7 +15,7 @@
     - title: (22) Linear Algebra and Applications
     - title: "(76) Topics in Applied Mathematics: Computational Optimal Transport"
     
-- title: University of California, Davis
+- location: University of California, Davis
   courses:
     - title: (00B) Elementary Algebra
     - title: (21C) Calculus
