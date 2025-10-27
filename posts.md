@@ -2,7 +2,7 @@
 layout: page
 title: Posts
 class: projects
-permalink: /publications/
+permalink: /posts/
 ---
 
 <!-- {:.hidden}
