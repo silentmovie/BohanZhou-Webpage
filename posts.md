@@ -2,6 +2,7 @@
 layout: page
 title: Posts
 class: projects
+permalink: /publications/
 ---
 
 <!-- {:.hidden}
