@@ -1,12 +1,12 @@
-- title: Signed Wasserstein Barycenter
+- title: (Signed) Wasserstein Barycenter
 # url: https://uwdata.github.io/draco
 # code: https://github.com/uwdata/draco
 # paper: /papers/2018-Draco-InfoVis.pdf
 # article: https://medium.com/@uwdata/64ce20287e9d
 # recording: https://vimeo.com/308980888
 # poster: https://vega.github.io/falcon/flights
-  image-slider: 
-  description: "As we have the **mean** of a collection of probability distribution, can we have distribution-to-distribution **regression**?"
+  image-slider: /assets/images/research/barycenter-comp.png
+  description: "How should the **mean** of a collection of probability distribution be computed in practice? What can we build on the **mean**"
   highlight: 1
 
 - title: Accelerated Sampling
@@ -20,13 +20,3 @@
   description: "How can we design an accelerated sampling algorithm on discrete state spaces such as graphs?"
   highlight: 2
 
-- title: Wasserstein Barycenter
-# url: https://uwdata.github.io/draco
-# code: https://github.com/uwdata/draco
-# paper: /papers/2018-Draco-InfoVis.pdf
-# article: https://medium.com/@uwdata/64ce20287e9d
-# recording: https://vimeo.com/308980888
-# poster: https://vega.github.io/falcon/flights
-  image-slider: /assets/images/research/barycenter-comp.png
-  description: "How should the **mean** of a collection of probability distribution be computed in practice?"
-  highlight: 3
