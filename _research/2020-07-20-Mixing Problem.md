@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Bohan
+date: 2020-07-20
 permalink: /2020/07/20/RT.html
 image-slider: /assets/images/posts/movie6.png
 categories: Research

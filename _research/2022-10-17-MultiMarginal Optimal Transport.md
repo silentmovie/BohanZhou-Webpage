@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Bohan
+date: 2022-10-17
 permalink: /2022/10/17/Robertson-Channel.html
 image-slider: /assets/images/posts/Bohan_icefloe.gif
 <!-- excerpt: Multi-marginal optimal transport for Sea Ice Dynamics Prediction -->
