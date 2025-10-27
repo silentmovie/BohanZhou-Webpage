@@ -8,7 +8,7 @@ excerpt_separator: <!--end_excerpt-->
 ---
 
 
-<h5><span style="color:#00703C">Wasserstein Interpolation Examples in Point Clouds</span></h5>
+<h5><span style="color:#00703C">Interpolate between Point Clouds in the Wasserstein space</span></h5>
 <!--end_excerpt-->
 <div class="row">
 	<div class="column">

@@ -1,16 +1,18 @@
 ---
 layout: post
 author: Bohan 
-date: 2022-08-05
-permalink: /2022/08/05/Shape-Interpolation.html
+date: 2022-11-05
+permalink: /2022/11/05/Shape-Interpolation.html
 image-slider: /assets/images/posts/barycenter-comp.png
 <!-- excerpt: Multi-marginal optimal transport for the Wasserstein barycenter -->
 categories: Research
 excerpt_separator: <!--end_excerpt-->
+paper: https://doi.org/10.1007/s10915-024-02572-8
+code: https://simda-muri.github.io/mmot/
 ---
 
 
-<h5><span style="color:grey">Multi-marginal optimal transport for the Wasserstein barycenter</span></h5>
+<h5><span style="color:grey">Use Multi-marginal optimal transport to compute exact Wasserstein barycenter</span></h5>
 <!--end_excerpt-->
 
 <div><img class="img-fluid" src="{{page.image-slider | relative_url}}" alt="Wasserstein Barycenter" /></div>

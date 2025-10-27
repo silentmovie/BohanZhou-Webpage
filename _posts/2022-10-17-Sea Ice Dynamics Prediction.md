@@ -10,7 +10,7 @@ excerpt_separator: <!--end_excerpt-->
 ---
 
 
-<h5><span style="color:grey">Multi-marginal Optimal Transport for Sea Ice Dynamics Prediction</span></h5>
+<h5><span style="color:grey">Use Multi-marginal Optimal Transport for Sea Ice Dynamics Prediction</span></h5>
 <!--end_excerpt-->
 
 <img class="img-fluid" src="{{page.image-slider | relative_url}}" alt="Robertson Channel">

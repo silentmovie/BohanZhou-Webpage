@@ -5,14 +5,12 @@ class: projects
 permalink: /research/
 ---
 
-<!-- {:.hidden}
-# Projects -->
 
-<!-- {:.lead}
-Here are some projects I have worked on for school, work, or fun. You can find the code for most of them on [GitHub](https://github.com/domoritz). -->
+{:.hidden}
+# Research 
 
 <div class="grid">
-  {% for project in site.research%}
+  {% for project in site.data.research %}
     {% include project.html project=project %}
   {% endfor %}
 </div>

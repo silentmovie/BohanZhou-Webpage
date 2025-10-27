@@ -7,7 +7,7 @@ image-slider: /assets/images/posts/parno-GRL2019.png
 categories: [learning post]
 ---
 
-<h5><span style="color:#F58025">Measuring Ice Motion with Optimal Transport</span></h5>
+<h5><span style="color:#F58025">Measure Ice Motion with Regularized Optimal Transport</span></h5>
 
 
 <img class="img-fluid" src="{{page.image-slider | relative_url}}" alt="OT">
