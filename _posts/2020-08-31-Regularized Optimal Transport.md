@@ -4,7 +4,7 @@ author: Bohan
 permalink: /2020/08/31/Sea-Ice-Dynamics-via-regularized-optimal-transport.html
 image-slider: /assets/images/posts/parno-GRL2019.png
 <!-- excerpt: Measuring Ice Motion with Optimal Transport -->
-categories: [Learning Posts]
+categories: [learning post]
 ---
 
 <h5><span style="color:#F58025">Measuring Ice Motion with Optimal Transport</span></h5>

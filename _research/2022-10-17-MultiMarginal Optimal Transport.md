@@ -12,7 +12,7 @@ excerpt_separator: <!--end_excerpt-->
 <h5><span style="color:grey">Multi-marginal Optimal Transport for Sea Ice Dynamics Prediction</span></h5>
 <!--end_excerpt-->
 
-<img class="img-fluid" src="{{site.baseurl}}/{{page.image-slider}}" alt="Robertson Channel">
+<img class="img-fluid" src="{{page.image-slider | relative_url}}" alt="Robertson Channel">
 
 B. Zhou and M. Parno \[[1]\] utilize a general multi-marginal optimal transport (MMOT) framework to obtain the continuous representation of discrete-in-time data. One possible application is the prediction on the sea ice dynamics. Given observations (called as marginals in the general framework) at different time-stamps, our method provides a prediction on the sea ice dynamics in a continuous time. This provides a solution to some stage in the [Lagrangian Observation Mapping](https://simda-muri.github.io/challenges/source/descriptions/problem2.html). The python package with its description can be found \[[2]\].
 

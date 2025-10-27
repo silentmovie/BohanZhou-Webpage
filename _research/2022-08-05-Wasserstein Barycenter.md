@@ -12,7 +12,7 @@ excerpt_separator: <!--end_excerpt-->
 <h5><span style="color:grey">Multi-marginal optimal transport for the Wasserstein barycenter</span></h5>
 <!--end_excerpt-->
 
-<div><img class="img-fluid" src="{{site.baseurl}}/{{page.image-slider}}" alt="Wasserstein Barycenter" /></div>
+<div><img class="img-fluid" src="{{page.image-slider | relative_url}}" alt="Wasserstein Barycenter" /></div>
 
 A barycenter-type of problems is: given a set of objects $(\mu_i)_{i=1}^m$,  we are looking for something in the same space (or formally speaking: within the same category), which is close to those objects with respect to some distance.
 

@@ -3,7 +3,7 @@ layout: post
 author: Bohan and Tyler 
 permalink: /2022/05/30/Understand-interpolation.html
 image-slider: /assets/images/posts/Wass-dough.gif
-categories: [Undergraduate Research Posts]
+categories: [mentoring post]
 excerpt_separator: <!--end_excerpt-->
 ---
 

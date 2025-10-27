@@ -12,7 +12,7 @@ excerpt_separator: <!--end_excerpt-->
 <!--end_excerpt-->
 
 <div class="row">
-<img class="img-fluid" url="{{'assets/images/posts/zmodel.mov' | relative_url}}" alt="Zmodel">
+<img class="img-fluid" src="{{'assets/images/posts/zmodel.mov' | relative_url}}" alt="Zmodel">
 </div>
 
 This project is a follow-up to the paper \[[1]\]. In that paper, authors derived an asymptotic model for the motion of multiphase incompressible Euler flows in 2D, subjected to Rayleigh-Taylor(RT) instability, allowing turn-over.
