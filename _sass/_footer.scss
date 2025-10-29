@@ -2,11 +2,9 @@
 
 footer {
   padding: $spacing-unit 0;
-
   font-size: $small-font-size;
-
-  background-color: $footer-background;
-  color: $footer-text;
+  background-color: $footer-background; // e.g., UC blue #003262
+  color: $footer-text; // e.g., white
 
   a {
     color: #fff;
@@ -24,8 +22,37 @@ footer {
   }
 
   .footer-col {
-    padding: calc($spacing-unit/2) 0;
+    flex: 1 1 30%;
+    padding: calc($spacing-unit / 2) 0;
+
+    &:first-child {
+      text-align: left;
+    }
+    &:nth-child(2) {
+      text-align: center;
+    }
+    &:last-child {
+      text-align: right;
+    }
   }
+
+  .visitor-map {
+    iframe, script {
+      max-width: 100%;
+    }
+  }
+
+  footer p {
+    margin: 0;
+    line-height: 1.5;
+    color: $footer-text;
+  }
+
+  span[title] {
+    color: lighten($footer-text, 10%);
+    font-style: italic;
+  }
+
   .site-desc {
     width: 500px;
 
