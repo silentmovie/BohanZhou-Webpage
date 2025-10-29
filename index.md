@@ -23,9 +23,9 @@ I received my Ph.D. at UC Davis advised by [Qinglan Xia](https://www.math.ucdavi
 
 <div class="me" markdown="1">
 <picture>
-  <source srcset='{{site.baseurl}}/assets/images/Zhou.jpg' type='image/jpg' />
+  <source srcset='{{site.baseurl}}/assets/images/Zhou-MFO.png' type='image/png' />
   <img
-    src='{{site.baseurl}}/assets/images/Zhou.jpg'
+    src='{{site.baseurl}}/assets/images/Zhou-MFO.png'
     alt='Bohan Zhou'>
 </picture>
 
