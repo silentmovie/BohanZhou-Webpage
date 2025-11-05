@@ -13,6 +13,7 @@ permalink: /blog/:year/:month/:title.html
 #   username: domoritz
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 collections:
