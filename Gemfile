@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem "jekyll"
+gem "jekyll", "~> 4.4"
+gem "jekyll-sass-converter", "~> 2.2"
 gem "csv"
 gem "faraday-retry"
 
@@ -10,6 +11,6 @@ group :jekyll_plugins do
     gem "jekyll-mentions"
     gem "jekyll-seo-tag"
     gem "jekyll-sitemap"
-    gem "sass-embedded", "~> 1.77"
+    # gem "sass-embedded", "~> 2.2"
     
 end
