@@ -15,7 +15,7 @@ In the undergraduate independent study on Optimal Transport theory, Shirley and 
 
 They implemented the method entirely in Python \[[2]], handling both 1D and 2D datasets, and visualized some key steps in this algorithm, particularly the Jacobian computations related with the pushforward map. Moreover, a recent proposed metric (WOP distance \[[3]]) between positive measures integrates naturally into this framework. They also developed a numerical solver for computing this metric.
 
-1```
+
 ----
 ##### References:
 
