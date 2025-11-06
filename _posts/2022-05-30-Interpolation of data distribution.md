@@ -19,7 +19,9 @@ excerpt_separator: <!--end_excerpt-->
 	</div>
 </div>
 
-Tyler, an undergraduate student at Dartmouth College, wants to fully understand the Wasserstein interpolation. Though the Wasserstein interpolation is not a new stuff: between two given measures $\mu_1$ and $\mu_2$, one may define the Wasserstein interpolation through either a given optimal transport map $T$:
+Tyler, an undergraduate at Dartmouth College, set out to truly grasp the concept of **Wasserstein interpolation**. Although this idea is far from new, it remains a fascinating and subtle phenomenon.
+
+Given two measures $\mu_1$ and $\mu_2$, one may define the Wasserstein interpolation through either a given optimal transport map $T$:
 
 \begin{equation}
 \label{eq:Wass_int_map}
@@ -33,11 +35,13 @@ or a given optimal transport plan $P$:
 \mu_t = ((1-t)x+ty)_{\sharp} P.
 \end{equation}
 
-However, as shown in the above animation figures, the Wasserstein interpolation is not that stable: Given two sets of two point clouds (blue point cloud at time 0 and red point cloud at time 1). On the left plot, they are in 90 degree intersected at their ends; on the right plot, they are in 84.55 degree intersected at their ends. However their interpolation behaviors via the Wasserstein interpolation look quite different. The left one is analogous with deformations of doughs in the bakery, the right one is almost regular rotation of a baguette. 
+As the animations above illustrate, it can behave in surprisingly unstable ways, at least in numerical experiments.
 
-In this particular example, we can explain it via optimal transport theory while there is still a long way towards a full understanding on the Wasserstein interpolation, so that predictions based on the Wasserstein interpolation are controlable.
+Consider two pairs of point clouds — blue at time 0 and red at time 1. In the top figure, the two clouds meet at a perfect right angle (90°), while in the bottom figure, the angle is slightly perturbed to 84.55°. Despite the small geometric difference, their Wasserstein interpolations diverge dramatically: the left one deforms smoothly, like kneading soft dough, whereas the right one almost performs a rigid rotation — more like a spinning baguette than a loaf being reshaped.
 
-Our current code owes a debt of gratitute to Prof. Peyre's open-resource online experiments \[[1]\], in particular, the linear programming to OT. In the future, we plan to use more recent faster solver \[[2]\], or more general MMOT solver \[[3]\]. 
+This contrast reveals both the beauty and the complexity of the Wasserstein interpolation. Optimal transport theory provides a partial explanation, yet a full understanding remains elusive — especially when we aim for predictable and controllable interpolations in practical applications.
+
+Our current implementation owes much to Prof. Peyré’s excellent open-source experiments [[1]], particularly his formulation of optimal transport via linear programming. Moving forward, we plan to experiment with faster modern solvers [[2]] and explore more general multi-marginal OT (MMOT) frameworks [[3]] to push these ideas further.
 
 ----
 ##### References:

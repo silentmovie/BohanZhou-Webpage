@@ -17,13 +17,13 @@ code: https://github.com/silentmovie/RTmodel
 <img class="img-fluid" src="{{'assets/images/posts/zmodel.mov' | relative_url}}" alt="Zmodel">
 </div>
 
-This project is a follow-up to the paper \[[1]\]. In that paper, authors derived an asymptotic model for the motion of multiphase incompressible Euler flows in 2D, subjected to Rayleigh-Taylor(RT) instability, allowing turn-over.
+This project continues the line of research initiated in [[1]], where the authors derived an asymptotic model for the motion of **multiphase incompressible Euler flows** in two dimensions, subject to **Rayleigh–Taylor (RT) instability** and capable of describing **turn-over phenomena**.
 
-Matlab codes in \[[2]\] simulates the mixing phenomenon caused by RT even for immiscible fluids without diffusion. To see how to measure mixedness without diffusion, see \[[3]\].
+The Matlab simulations in [[2]] visualize the **mixing process** driven by RT instability — even in immiscible fluids where no diffusion is present. For a detailed discussion on how to quantify the degree of mixing without diffusion, see [[3]].
 
-In the movie, the top box simulates the "rocket rig" experiment (mixing of NaI solution and pentane using rocket motors), in an ensemble averaging procedure; the second box shows the occupied density in the zoom-in window averaged in all experiments; the third box shows the evolution of the mixedness in terms of $\dot{H}^{-1}$ norm; the fourth box shows the effect of artificial viscosity.
+In the movie, the top panel simulates the "rocket rig" experiment (mixing of an NaI solution and pentane accelerated by rocket motors). It performs ensemble averaging over multiple runs. The second panel shows the occupied density within the zoom-in window, averaged across all realizations. The third panel tracks the evolution of mixedness in terms of $\dot{H}^{-1}$ norm. The fourth panel illustrates the influence of artificial viscosity on the dynamics.
 
-Please refer to \[[4]\] for the recent development.
+Please refer to \[[4]\] for the recent refinement and development.
 
 ----
 ##### References:

@@ -17,14 +17,14 @@ code: https://simda-muri.github.io/mmot/
 
 <div><img class="img-fluid" src="{{page.image-slider | relative_url}}" alt="Wasserstein Barycenter" /></div>
 
-A barycenter-type of problems is: given a set of objects $(\mu_i)_{i=1}^m$,  we are looking for something in the same space (or formally speaking: within the same category), which is close to those objects with respect to some distance.
+A barycenter-type problem asks the following: given a set of objects $(\mu_i)_{i=1}^m$,  we are looking for another object in the same space (or more formally, within the same category), that is close as possible to all of them with respect to a chosen metric or divergence.
 
 \begin{equation}
 \label{eq:bary}
 \mu= \textrm{argmin}\sum_{i=1}^m \lambda_i \textrm{dis}(\mu_i,\mu).
 \end{equation}
 
-Depending on the metric, the barycenter contains "averaged" information from objects.
+Depending on the metric, the barycenter contains "averaged" information from input objects.
 
 In our problem, we are particularly interested in the space of probability measures equipped with the Wasserstein distance, which was introduced by Agueh and Carlier \[[1]\].
 
@@ -35,16 +35,21 @@ In our problem, we are particularly interested in the space of probability measu
 
 They showed it is equivalent to the MMOT under the cost 
 \begin{equation}
-c(x_1,\cdots,x_m)=\sum_{i<j}\frac{\lambda_i \lambda_j}{2} \|x_i-x_j\|^2.
+c(x_1,\ldots,x_m)=\sum_{i<j}\frac{\lambda_i \lambda_j}{2} \|x_i-x_j\|^2.
 \end{equation}
 
-And the Wasserstein barycenter is introduced by
+Out method \[[2]\] provides an exact and efficient way to solve the dual problem to the MMOT problem, 
+$$
+\begin{eqnarray}
+&\sup& \sum_{i=1}^m \int f_i(x_i) \mathrm{d}\mu_i;\\
+&\textrm{s.t.}& \sum_{i=1}^m f_i(x_i)\leqslant c(x_1,\ldots,x_m).
+\end{eqnarray}
+$$
+and the dual variables $(f_i)$, as one of outputs, can induce the Wasserstein barycenter by
 \begin{equation}
 \label{eq:pushforward}
 \mu= (\textrm{id} - \frac{\nabla f_i}{\lambda_i})_{\sharp} \mu_i.
 \end{equation}
-
-Our method \[[2]\] provides an exact and efficient way to compute dual variables $(f_i)$ in an indirect way because the cost $c(x_1,\cdots,x_m)=\sum_{i<j}\frac{\lambda_i \lambda_j}{2} \|x_i-x_j\|^2$ corresponds to a complete graph: we find the dual variables $(\hat{f_i})$ to an equivalent MMOT in a tree and use those dual variables to recover the original dual variables $(f_i)$
 
 ----
 ##### References:
