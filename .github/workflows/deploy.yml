@@ -16,31 +16,38 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
+      # 🧱 Install Dart SDK BEFORE setting up Ruby
+      - name: Install Dart SDK
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y apt-transport-https wget gnupg
+          wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/dart-archive-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/dart-archive-keyring.gpg] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main" | sudo tee /etc/apt/sources.list.d/dart_stable.list
+          sudo apt-get update
+          sudo apt-get install -y dart
+
+      # 🧰 Setup Ruby (after Dart so sass-embedded can build)
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
-          bundler-cache: true
+          bundler-cache: false  # disable cache to avoid reusing failed install
 
-      - name: Install dependencies
+      - name: Install system dependencies
+        run: sudo apt-get install -y build-essential ruby-dev
+
+      - name: Install Ruby gems
         run: |
-          sudo apt-get install -y build-essential ruby-dev
-          bundle install
-      - name: Install Dart SDK
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y apt-transport-https
-          sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
-          sudo sh -c 'wget -qO /etc/apt/sources.list.d/dart_stable.list https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list'
-          sudo apt-get update
-          sudo apt-get install -y dart
-      - name: build
-        run: |
-          bundle exec jekyll build -d _site
+          bundle config set --local path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
+
+      - name: Build site with Jekyll
+        run: bundle exec jekyll build -d _site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
