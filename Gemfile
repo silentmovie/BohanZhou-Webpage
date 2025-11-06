@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "~> 4.4"
-gem "jekyll-sass-converter", "~> 2.2"
+gem "jekyll"
 gem "csv"
 gem "faraday-retry"
 
