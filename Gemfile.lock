@@ -199,6 +199,7 @@ DEPENDENCIES
   jekyll-mentions
   jekyll-seo-tag
   jekyll-sitemap
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.6.2
