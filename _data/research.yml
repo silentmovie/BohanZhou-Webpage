@@ -37,6 +37,6 @@
   description: What is the best shape to balance the minimal perimeter and its surrounding ``coating''?
 
 - title: Fluid Mixing
-  image-slider: /assets/images/research/mixing.png
+  image-slider: /assets/images/research/Mixing.png
   code: https://github.com/silentmovie/RTmodel
   description: How shall one mix fluid efficiently? How shall one quantify that?
