@@ -59,3 +59,19 @@ I received my Ph.D. at UC Davis advised by [Qinglan Xia](https://www.math.ucdavi
   <i class="fas fa-chevron-circle-right"></i>
   Show All Papers
 </a>
+
+## Featured <a href="{{ "/research/" | relative_url }}">Projects</a>
+
+<div class="featured-projects">
+  {% assign sorted_projects = site.data.research | sort: 'highlight' %}
+  {% for project in sorted_projects %}
+    {% if project.highlight %}
+      {% include project.html project=project %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<a href="{{ "/research/" | relative_url }}" class="button">
+  <i class="fas fa-chevron-circle-right"></i>
+  Show More Projects
+</a>
