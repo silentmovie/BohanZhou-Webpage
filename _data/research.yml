@@ -5,8 +5,9 @@
 # article: https://medium.com/@uwdata/64ce20287e9d
 # recording: https://vimeo.com/308980888
 # poster: https://vega.github.io/falcon/flights
+  code: https://simda-muri.github.io/mmot/
   image-slider: /assets/images/research/barycenter-comp.png
-  description: "How should the **mean** of a collection of probability distribution be computed in practice? What can we build on the **mean**"
+  description: "How should the **mean** of a collection of probability distribution be computed in practice? What can we build on the **mean**?"
   highlight: 1
 
 - title: Accelerated Sampling
@@ -16,7 +17,26 @@
   # article: https://medium.com/@uwdata/64ce20287e9d
   # recording: https://vimeo.com/308980888
   # poster: https://vega.github.io/falcon/flights
+  code: https://github.com/silentmovie/AMCMC
+  poster: /assets/poster/Poster_AMCMC.pdf
   image-slider: /assets/images/research/roadmap.jpg
-  description: "How can we design an accelerated sampling algorithm on discrete state spaces such as graphs?"
+  description: "How can we design an **accelerated MCMC** sampling algorithm on discrete state spaces such as graphs?"
   highlight: 2
 
+- title: Multimarginal Optimal Transport
+  code: https://simda-muri.github.io/mmot/
+  poster: /assets/poster/Poster_MMOT.pdf
+  image-slider: /assets/images/research/icefloe.gif
+  description: Given a sequence of data, what is their distributional **representation** in the sense of optimal transport theory?
+  highlight: 3
+
+- title: Shape Optimization
+  image-slider: /assets/images/research/Pacman.png
+  poster: /assets/poster/Poster_isoperimetric.pdf
+  paper: https://www.degruyterbrill.com/document/doi/10.1515/acv-2020-0083/html
+  description: What is the best shape to balance the minimal perimeter and its surrounding ``coating''?
+
+- title: Fluid Mixing
+  image-slider: /assets/images/research/mixing.png
+  code: https://github.com/silentmovie/RTmodel
+  description: How shall one mix fluid efficiently? How shall one quantify that?
